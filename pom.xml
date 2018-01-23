@@ -14,6 +14,29 @@
 		<version>1.0.1</version>
 	</parent>
 
+	<description>
+		Java utilities to perform common sanitization tasks on (user) input.
+	</description>
+
+	<url>https://github.com/bordertech/java-sanitizer</url>
+
+	<scm>
+		<url>https://github.com/bordertech/java-sanitizer</url>
+		<connection>scm:git:https://github.com/bordertech/java-sanitizer.git</connection>
+		<developerConnection>scm:git:https://github.com/bordertech/java-sanitizer.git</developerConnection>
+		<tag>java-sanitizer-1.0.0</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/bordertech/java-sanitizer/issues</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>CircleCI</system>
+		<url>https://circleci.com/gh/bordertech/java-sanitizer/</url>
+	</ciManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -27,6 +50,4 @@
 			<version>4.12</version>
 		</dependency>
 	</dependencies>
-
-
 </project>
