@@ -10,13 +10,6 @@ import org.apache.commons.lang3.text.translate.LookupTranslator;
 public final class Symbols {
 
 	/**
-	 * Prevent instantiation of static utility class.
-	 */
-	private Symbols() {
-
-	}
-
-	/**
 	 * Used to substitute commonly encountered "symbols" with ascii representations.
 	 */
 	private static final CharSequenceTranslator SYMBOLS = new LookupTranslator(
@@ -41,6 +34,13 @@ public final class Symbols {
 			{"\u02DC", "~"},
 			{"\u00A0", " "}
 		});
+
+	/**
+	 * Prevent instantiation of static utility class.
+	 */
+	private Symbols() {
+
+	}
 
 	/**
 	 * Special symbols in user input will be substituted for plain ascii characters.
