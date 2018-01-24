@@ -4,7 +4,7 @@
 
 	<groupId>com.github.bordertech.sanitizer</groupId>
 	<artifactId>sanitizer</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 
 	<parent>
 		<groupId>com.github.bordertech.common</groupId>
@@ -24,7 +24,7 @@
 		<url>https://github.com/bordertech/java-sanitizer</url>
 		<connection>scm:git:https://github.com/bordertech/java-sanitizer.git</connection>
 		<developerConnection>scm:git:https://github.com/bordertech/java-sanitizer.git</developerConnection>
-		<tag>sanitizer-1.0.0</tag>
+		<tag>java-sanitizer-1.0.0</tag>
 	</scm>
 
 	<issueManagement>
