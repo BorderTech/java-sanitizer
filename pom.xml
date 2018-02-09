@@ -4,18 +4,19 @@
 
 	<groupId>com.github.bordertech.sanitizer</groupId>
 	<artifactId>sanitizer</artifactId>
+	<name>sanitizer</name>
 	<version>1.0.1-SNAPSHOT</version>
 
 	<parent>
 		<groupId>com.github.bordertech.common</groupId>
 		<artifactId>qa-parent</artifactId>
-		<version>1.0.3</version>
+		<version>1.0.4</version>
 	</parent>
 
 	<packaging>jar</packaging>
 
 	<properties>
-		<wc.qa.skip>false</wc.qa.skip>
+		<bt.qa.skip>false</bt.qa.skip>
 	</properties>
 
 	<description>
