@@ -18,15 +18,15 @@ public class SymbolsTest {
 
 	@Test
 	public void testAsciifySymbolWithQuotes() {
-		String in = "\u201Cfancy quotes\u201D and \u201E";
-		String out = "\"fancy quotes\" and \"";
+		String in = "\u201Cfancy quotes\u201D and \u201E plus \u201F";
+		String out = "\"fancy quotes\" and \" plus \"";
 		Assert.assertEquals("Quotes not handled correctly", out, Symbols.asciifySymbol(in));
 	}
 
 	@Test
 	public void testAsciifySymbolWithSingleQuotes() {
-		String in = "\u2018fancy single quotes\u2019";
-		String out = "'fancy single quotes'";
+		String in = "\u2018fancy single quotes\u2019 plus \u201A and \u201B";
+		String out = "'fancy single quotes' plus ' and '";
 		Assert.assertEquals("Single quotes not handled correctly", out, Symbols.asciifySymbol(in));
 	}
 
@@ -35,6 +35,13 @@ public class SymbolsTest {
 		String in = "\u8230\u2013\u2013\u2013\u8230\u00A0\u8230\u2014\u2014\u2014\u8230";
 		String out = "...---... ...---...";
 		Assert.assertEquals("ellipsis endash emdash nbsp", out, Symbols.asciifySymbol(in));
+	}
+
+	@Test
+	public void testAsciifySymbolWithOtherEllipsisAndPeriods() {
+		String in = "\u2024 \u2025 \u2026";
+		String out = ". .. ...";
+		Assert.assertEquals("period double period ellipsis", out, Symbols.asciifySymbol(in));
 	}
 
 	@Test
@@ -57,4 +64,19 @@ public class SymbolsTest {
 		String out = "(C) (R) (TM)";
 		Assert.assertEquals("Translate mark symbols", out, Symbols.asciifySymbol(in));
 	}
+
+	@Test
+	public void testAsciifyAllTheWhiteSpace() {
+		String in = "\u0020 \u00A0 \u1680 \u180E \u2000 \u2001 \u2002 \u2003 \u2004 \u2005 \u2006 \u2007 \u2008 \u2009 \u200A \u200B \u202F \u205F \u3000 \uFEFF";
+		String out = "                                       ";
+		Assert.assertEquals("Translate whitespace symbols", out, Symbols.asciifySymbol(in));
+	}
+
+	@Test
+	public void testAsciifyBracketsAndRelated() {
+		String in = "\uff08\uff09 \uff3b\uff3d \uff5b\uff5d \uff5f\uff60";
+		String out = "() [] {} ()";
+		Assert.assertEquals("Translate brackets and related symbols", out, Symbols.asciifySymbol(in));
+	}
+
 }
