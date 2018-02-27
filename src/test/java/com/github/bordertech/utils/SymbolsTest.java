@@ -67,9 +67,16 @@ public class SymbolsTest {
 
 	@Test
 	public void testAsciifyAllTheWhiteSpace() {
-		String in = "\u0020 \u00A0 \u1680 \u180E \u2000 \u2001 \u2002 \u2003 \u2004 \u2005 \u2006 \u2007 \u2008 \u2009 \u200A \u200B \u202F \u205F \u3000 \uFEFF";
-		String out = "                                       ";
+		String in = "\u00A0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000";
+		String out = "                ";
 		Assert.assertEquals("Translate whitespace symbols", out, Symbols.asciifySymbol(in));
+	}
+
+	@Test
+	public void testAsciifyAllTheBlancSpace() {
+		String in = "\u180E\u200B\uFEFF";
+		String out = "";
+		Assert.assertEquals("Translate no-space symbols", out, Symbols.asciifySymbol(in));
 	}
 
 	@Test
