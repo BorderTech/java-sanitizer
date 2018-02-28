@@ -5,7 +5,7 @@
 	<groupId>com.github.bordertech.sanitizer</groupId>
 	<artifactId>sanitizer</artifactId>
 	<name>sanitizer</name>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 
 	<parent>
 		<groupId>com.github.bordertech.common</groupId>
