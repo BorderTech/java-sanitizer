@@ -14,57 +14,56 @@ public final class Symbols {
 	 */
 	private static final CharSequenceTranslator SYMBOLS = new LookupTranslator(
 		new String[][]{
-			{"\u201C", "\""},
-			{"\u201D", "\""},
-			{"\u201E", "\""},
-			{"\u201F", "\""},
-			{"\u2018", "'"},
-			{"\u2019", "'"},
-			{"\u201A", "'"},
-			{"\u201B", "'"},
-			{"\u2013", "-"},
-			{"\u2014", "-"},
-			{"\u2024", "."},
-			{"\u2025", ".."},
-			{"\u2026", "..."},
-			{"\u00BD", "1/2"},
-			{"\u00BC", "1/4"},
-			{"\u00BE", "3/4"},
-			{"\u00A9", "(C)"},
-			{"\u00AE", "(R)"},
-			{"\u2122", "(TM)"},
-			{"\u8230", "..."},
-			{"\u02C6", "^"},
-			{"\u2039", "<"},
-			{"\u203A", ">"},
-			{"\u02DC", "~"},
-			{"\u00A0", " "},
-			{"\u1680", " "},
-			{"\u180E", ""},
-			{"\u2000", " "},
-			{"\u2001", " "},
-			{"\u2002", " "},
-			{"\u2003", " "},
-			{"\u2004", " "},
-			{"\u2005", " "},
-			{"\u2006", " "},
-			{"\u2007", " "},
-			{"\u2008", " "},
-			{"\u2009", " "},
-			{"\u200A", " "},
-			{"\u200B", ""},
-			{"\u202F", " "},
-			{"\u205F", " "},
-			{"\u3000", " "},
-			{"\uFEFF", ""},
-			{"\uff08", "("},
-			{"\uff09", ")"},
-			{"\uff3b", "["},
-			{"\uff3d", "]"},
-			{"\uff5b", "{"},
-			{"\uff5d", "}"},
-			{"\uff5f", "("},
-			{"\uff60", ")"}
+			{"\u201C", "\""},  // LEFT DOUBLE QUOTATION MARK
+			{"\u201D", "\""},  // RIGHT DOUBLE QUOTATION MARK
+			{"\u201E", "\""},  // DOUBLE LOW-9 QUOTATION MARK
+			{"\u201F", "\""},  // DOUBLE HIGH-REVERSED-9 QUOTATION MARK
+			{"\u2018", "'"},  // LEFT SINGLE QUOTATION MARK
+			{"\u2019", "'"},  // RIGHT SINGLE QUOTATION MARK
+			{"\u201A", "'"},  // SINGLE LOW-9 QUOTATION MARK
+			{"\u201B", "'"},  // SINGLE HIGH-REVERSED-9 QUOTATION MARK
+			{"\u2013", "-"},  // EN DASH
+			{"\u2014", "-"},  // EM DASH
+			{"\u2024", "."},  // ONE DOT LEADER
+			{"\u2025", ".."},  // TWO DOT LEADER
+			{"\u2026", "..."},  // HORIZONTAL ELLIPSIS
+			{"\u00BD", "1/2"},  // VULGAR FRACTION ONE HALF
+			{"\u00BC", "1/4"},  // VULGAR FRACTION ONE QUARTER
+			{"\u00BE", "3/4"},  // VULGAR FRACTION THREE QUARTERS
+			{"\u00A9", "(C)"},  // COPYRIGHT SIGN
+			{"\u00AE", "(R)"},  // REGISTERED SIGN
+			{"\u2122", "(TM)"},  // TRADE MARK SIGN
+			{"\u02C6", "^"},  // MODIFIER LETTER CIRCUMFLEX ACCENT
+			{"\u2039", "<"},  // SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+			{"\u203A", ">"},  // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+			{"\u02DC", "~"},  // SMALL TILDE
+			{"\u00A0", " "},  // NO-BREAK SPACE
+			{"\u1680", " "},  // OGHAM SPACE MARK
+			{"\u180E", ""},  // MONGOLIAN VOWEL SEPARATOR
+			{"\u2000", " "},  // EN QUAD
+			{"\u2001", " "},  // EM QUAD
+			{"\u2002", " "},  // EN SPACE
+			{"\u2003", " "},  // EM SPACE
+			{"\u2004", " "},  // THREE-PER-EM SPACE
+			{"\u2005", " "},  // FOUR-PER-EM SPACE
+			{"\u2006", " "},  // SIX-PER-EM SPACE
+			{"\u2007", " "},  // FIGURE SPACE
+			{"\u2008", " "},  // PUNCTUATION SPACE
+			{"\u2009", " "},  // THIN SPACE
+			{"\u200A", " "},  // HAIR SPACE
+			{"\u200B", ""},  // ZERO WIDTH SPACE
+			{"\u202F", " "},  // NARROW NO-BREAK SPACE
+			{"\u205F", " "},  // MEDIUM MATHEMATICAL SPACE
+			{"\u3000", " "},  // IDEOGRAPHIC SPACE
+			{"\uFEFF", ""},  // ZERO WIDTH NO-BREAK SPACE
+			{"\uff08", "("},  // FULLWIDTH LEFT PARENTHESIS
+			{"\uff09", ")"},  // FULLWIDTH RIGHT PARENTHESIS
+			{"\uff3b", "["},  // FULLWIDTH LEFT SQUARE BRACKET
+			{"\uff3d", "]"},  // FULLWIDTH RIGHT SQUARE BRACKET
+			{"\uff5b", "{"},  // FULLWIDTH LEFT CURLY BRACKET
+			{"\uff5d", "}"},  // FULLWIDTH RIGHT CURLY BRACKET
+			{"\uff5f", "("},  // FULLWIDTH LEFT WHITE PARENTHESIS
+			{"\uff60", ")"}  // FULLWIDTH RIGHT WHITE PARENTHESIS
 		});
 
 	/**
