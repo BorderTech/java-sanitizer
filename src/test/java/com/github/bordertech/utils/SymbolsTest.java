@@ -32,7 +32,7 @@ public class SymbolsTest {
 
 	@Test
 	public void testAsciifySymbolWithNbspDashesAndEllipsis() {
-		String in = "\u8230\u2013\u2013\u2013\u8230\u00A0\u8230\u2014\u2014\u2014\u8230";
+		String in = "\u2026\u2013\u2013\u2013\u2026\u00A0\u2026\u2014\u2014\u2014\u2026";
 		String out = "...---... ...---...";
 		Assert.assertEquals("ellipsis endash emdash nbsp", out, Symbols.asciifySymbol(in));
 	}
