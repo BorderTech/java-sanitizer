@@ -7,7 +7,7 @@ The most common intended use case is sanitizing input which has been copied and 
 ## Status
 
 [![javadoc.io](https://javadoc.io/badge2/com.github.bordertech.sanitizer/sanitizer/javadoc.io.svg)](https://javadoc.io/doc/com.github.bordertech.sanitizer/sanitizer)
-[![CircleCI](https://circleci.com/gh/BorderTech/java-sanitizer.svg?style=svg)](https://circleci.com/gh/BorderTech/java-sanitizer)
+[![Build Status](https://travis-ci.com/BorderTech/java-sanitizer.svg?branch=master)](https://travis-ci.com/BorderTech/java-sanitizer)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/328a4c7e60104557a442a456e7e7e33e)](https://www.codacy.com/app/BorderTech/java-sanitizer?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BorderTech/java-sanitizer&amp;utm_campaign=Badge_Grade)
 
 ## Usage
